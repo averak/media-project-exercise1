@@ -1,6 +1,5 @@
 # メディアプロジェクト演習 1
 
-![build](https://github.com/averak/rcc-gateway/workflows/build/badge.svg)
 ![build](https://github.com/averak/media-project-exercise1/workflows/build/badge.svg)
 ![code check](https://github.com/averak/media-project-exercise1/workflows/code%20check/badge.svg)
 ![deploy](https://github.com/averak/media-project-exercise1/workflows/deploy/badge.svg)
@@ -8,7 +7,6 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 メディアプロジェクト演習 1 のグループ制作課題です。
-
 ## Develop
 
 ### Requirements
