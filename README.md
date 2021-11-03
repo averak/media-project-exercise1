@@ -1,27 +1,52 @@
-# MediaProjectExercise1
+# メディアプロジェクト演習 1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+![build](https://github.com/averak/rcc-gateway/workflows/build/badge.svg)
+![build](https://github.com/averak/media-project-exercise1/workflows/build/badge.svg)
+![code check](https://github.com/averak/media-project-exercise1/workflows/code%20check/badge.svg)
+![deploy](https://github.com/averak/media-project-exercise1/workflows/deploy/badge.svg)
+![Version 1.0](https://img.shields.io/badge/version-1.0-yellow.svg)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-## Development server
+メディアプロジェクト演習 1 のグループ制作課題です。
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Develop
 
-## Code scaffolding
+### Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js 14
+- Angular
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+$ yarn
+```
 
-## Running unit tests
+### How to build
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+$ yarn build
+```
 
-## Running end-to-end tests
+When build successful, you can find static files in `dist`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### How to run
 
-## Further help
+```sh
+$ yarn start
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### How to check code
+
+You need to do this before committing.
+
+```sh
+# lint & type check
+$ yarn run check
+
+# code format
+$ yarn run format
+
+# test
+$ yarn run test
+```
