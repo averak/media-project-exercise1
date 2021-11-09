@@ -7,6 +7,7 @@ import { MainContainerComponent } from './shared/component/main-container/main-c
 // modules
 import { ErrorRoutingModule } from './component/error/error-routing.module';
 import { DashboardRoutingModule } from './component/dashboard/dashboard-routing.module';
+import { WebHistoryRoutingModule } from './component/web-history/web-history-routing.module';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () => DashboardRoutingModule,
+      },
+      {
+        path: 'web-history',
+        loadChildren: () => WebHistoryRoutingModule,
       },
     ],
   },
