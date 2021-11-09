@@ -1,4 +1,5 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../node_modules/angular-calendar/css/angular-calendar.css';
 
 /* background colors */
 .project-bg-white1 {
@@ -48,7 +49,152 @@ body {
   width: 100%;
 }
 
+.project-top-border {
+  border-top: 1px solid #d0d7e3;
+}
+
+.project-bottom-border {
+  border-bottom: 1px solid #d0d7e3;
+}
+
+.main-content {
+  min-width: auto;
+  min-height: calc(100vh - 60px);
+}
+
 .scroll-content {
   max-height: calc(100vh - 60px);
   overflow: auto;
+}
+
+.page-main-content {
+  width: 100%;
+  padding: 0px 0px 30px 30px;
+}
+
+.main-contents-card {
+  width: calc(100% - 64px);
+  background-color: #ffffff;
+  border-radius: 0px;
+}
+
+.padding-top-0 {
+  padding-top: 0px !important;
+}
+
+.mat-card-title {
+  color: #364862 !important;
+  margin: 9px 0px 9px 0px !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.menu-panel {
+  border-radius: 0px !important;
+}
+
+.mat-snack-bar-container {
+  padding: 0 !important;
+  min-height: 50px !important;
+  max-width: 65vw !important;
+}
+
+.mat-card {
+  border-radius: 0px !important;
+  z-index: 2;
+}
+
+.mat-flat-button {
+  border-radius: 0px !important;
+}
+
+.cancel-button {
+  color: #364862;
+  border: 1px solid !important;
+  border-color: #c4c4c4 !important;
+  width: 110px;
+  height: 40px;
+}
+
+.submit-button {
+  color: #ffffff;
+  border: 1px solid !important;
+  border-color: #3a7aca !important;
+  background-color: #3a7aca;
+  min-width: 110px !important;
+  height: 40px;
+}
+
+.mat-button-toggle-group {
+  height: 40px;
+  align-items: center;
+  border-radius: 0px !important;
+}
+
+.mat-button-toggle {
+  width: 80px;
+  color: #364862 !important;
+}
+
+.mat-button-toggle-checked {
+  color: #ffffff !important;
+  background-color: #3a7aca !important;
+}
+
+.form-content {
+  width: 100%;
+}
+
+.form-input {
+  width: 17vw;
+}
+
+.input-label {
+  margin-left: 10px;
+  width: 200px;
+}
+
+.app-loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cal-event-title {
+  color: #4873c4 !important;
+}
+
+.cal-event {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
+/* table settings */
+table {
+  border: 1px solid #d9ddde;
+  border-bottom: 0;
+}
+
+.mat-header-cell {
+  background-color: #f4f6f8 !important;
+}
+
+.mat-header-row {
+  height: 40px !important;
+}
+
+.mat-row {
+  height: auto !important;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #f7fbfd;
+}
+
+.mat-cell {
+  padding: 2px 0px 2px 0px;
+  border-bottom-style: none;
 }

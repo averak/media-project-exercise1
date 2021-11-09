@@ -1,0 +1,56 @@
+<mat-sidenav-container class="main-content project-bg-white2" *ngIf="document">
+  <mat-sidenav mode="side" class="side-menu" opened>
+    <!-- サービスの説明 -->
+    <div
+      class="project-bg-blue3 project-fg-white1 document-detail-box"
+      fxLayout="column"
+      fxLayoutAlign="start start"
+    >
+      <h2 class="document-title">{{ document.title }}</h2>
+      <div class="document-description">{{ document.description }}</div>
+    </div>
+
+    <mat-nav-list>
+      <a
+        *ngFor="let nav of document.navs"
+        mat-list-item
+        [routerLink]="nav.url"
+        routerLinkActive="active"
+        #item="routerLinkActive"
+      >
+        <div *ngIf="item.isActive" class="active-list-bar project-bg-blue4"></div>
+        <mat-icon class="project-fg-black1">{{ nav.icon }}</mat-icon>
+        <p class="column-text project-fg-black1">{{ nav.label }}</p>
+      </a>
+    </mat-nav-list>
+
+    <!-- ボーダーのためだけに表示 -->
+    <mat-nav-list *ngIf="document.navs.length !== 0" class="project-bottom-border"> </mat-nav-list>
+
+    <mat-nav-list>
+      <a
+        mat-list-item
+        [href]="document.externalLink.reference"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <mat-icon class="project-fg-black1">description</mat-icon>
+        <p class="column-text project-fg-black1">リファレンス</p>
+        <mat-icon class="project-fg-black1 launch-icon">launch</mat-icon>
+      </a>
+      <a mat-list-item [href]="document.externalLink.faq" target="_blank" rel="noopener noreferrer">
+        <mat-icon class="project-fg-black1">help</mat-icon>
+        <p class="column-text project-fg-black1">FAQ</p>
+        <mat-icon class="project-fg-black1 launch-icon">launch</mat-icon>
+      </a>
+
+      <!-- HOMEへ戻るボタン -->
+      <a mat-list-item class="go-home-button project-top-border" [routerLink]="'/dashboard'">
+        <mat-icon class="project-fg-black1">keyboard_double_arrow_left</mat-icon>
+        <p class="column-text project-fg-black1">HOME</p>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <ng-content></ng-content>
+</mat-sidenav-container>

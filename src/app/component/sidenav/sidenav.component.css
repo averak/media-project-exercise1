@@ -1,0 +1,47 @@
+.side-menu {
+  max-width: 270px;
+  width: 30%;
+  height: 100%;
+}
+
+.column-text {
+  margin-left: 5%;
+}
+
+.document-detail-box {
+  min-height: 150px;
+}
+
+.document-title {
+  padding: 0px 15px 0px 15px;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.document-description {
+  padding: 0px 15px 15px 15px;
+  font-size: 10pt;
+}
+
+.launch-icon {
+  margin-left: auto;
+}
+
+.go-home-button {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+a.mat-list-item.active {
+  background-color: #dff1fe !important;
+}
+
+.active-list-bar {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 7px;
+}

@@ -1,10 +1,14 @@
 <app-header></app-header>
-<div class="scroll-content">
-  <div class="main-content" fxLayout="column" fxLayoutAlign="start start">
-    <div></div>
+<app-sidenav>
+  <div class="scroll-content">
+    <div class="page-main-content" fxLayout="column" fxLayoutAlign="start start">
+      <div>
+        <p>hello</p>
+      </div>
 
-    <div class="width-100">
-      <router-outlet></router-outlet>
+      <div class="main-container">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
-</div>
+</app-sidenav>
