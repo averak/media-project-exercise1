@@ -1,8 +1,13 @@
 <mat-card class="mat-elevation-z2 document-card">
   <mat-card-content fxLayout="column" fxLayoutAlign="start">
     <div fxLayout="row" fxLayoutAlign="space-between center">
-      <a class="document-card-title project-fg-blue1" [routerLink]="document.url">
-        <mat-icon>token</mat-icon>
+      <a
+        class="document-card-title project-fg-blue1"
+        [routerLink]="document.url"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+      >
+        <mat-icon>description</mat-icon>
         <span fxFlexOffset="5px">{{ document.title }}</span>
       </a>
 

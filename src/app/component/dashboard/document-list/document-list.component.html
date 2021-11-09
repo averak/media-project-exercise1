@@ -1,0 +1,5 @@
+<div fxLayout="row wrap" fxLayoutAlign="start wrap">
+  <div *ngFor="let document of documents">
+    <app-document-card *ngIf="document.display" [document]="document"></app-document-card>
+  </div>
+</div>
