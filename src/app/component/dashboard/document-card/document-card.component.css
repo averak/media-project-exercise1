@@ -1,0 +1,20 @@
+.document-card {
+  margin: 0px 20px 20px 0px;
+  width: calc((100vw - 270px) / 3 - 66px);
+  border-radius: 0px;
+  z-index: 1;
+}
+
+.mat-card-content {
+  padding: 5px;
+}
+
+.document-card-title {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.document-card-description {
+  height: 50px;
+  overflow-y: scroll;
+}

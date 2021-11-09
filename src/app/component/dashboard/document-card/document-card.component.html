@@ -1,0 +1,16 @@
+<mat-card class="mat-elevation-z2 document-card">
+  <mat-card-content fxLayout="column" fxLayoutAlign="start">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <a class="document-card-title project-fg-blue1" [routerLink]="document.url">
+        <mat-icon>token</mat-icon>
+        <span fxFlexOffset="5px">{{ document.title }}</span>
+      </a>
+
+      <app-document-version-chip [version]="document.version"></app-document-version-chip>
+    </div>
+
+    <div class="document-card-description project-fg-black1" fxFlexOffset="20px">
+      {{ document.description }}
+    </div>
+  </mat-card-content>
+</mat-card>
