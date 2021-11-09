@@ -29,8 +29,13 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
+// components
+import { HeaderComponent } from './component/header/header.component';
+import { MainContainerComponent } from './component/main-container/main-container.component';
+import { SidenavComponent } from './component/sidenav/sidenav.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [HeaderComponent, MainContainerComponent, SidenavComponent],
   imports: [
     CommonModule,
     FormsModule,

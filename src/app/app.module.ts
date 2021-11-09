@@ -8,12 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 // components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './component/header/header.component';
-import { MainContainerComponent } from './component/main-container/main-container.component';
-import { SidenavComponent } from './component/sidenav/sidenav.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainContainerComponent, SidenavComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent, SharedModule, AppRoutingModule, BrowserModule, BrowserAnimationsModule],
