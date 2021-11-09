@@ -33,9 +33,10 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './component/header/header.component';
 import { MainContainerComponent } from './component/main-container/main-container.component';
 import { SidenavComponent } from './component/sidenav/sidenav.component';
+import { TitleComponent } from './component/title/title.component';
 
 @NgModule({
-  declarations: [HeaderComponent, MainContainerComponent, SidenavComponent],
+  declarations: [HeaderComponent, MainContainerComponent, SidenavComponent, TitleComponent],
   imports: [
     CommonModule,
     FormsModule,
