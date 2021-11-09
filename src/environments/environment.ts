@@ -26,7 +26,13 @@ export const environment = {
         reference: '',
         faq: '',
       },
-      navs: [],
+      navs: [
+        {
+          label: 'Webの歴史',
+          url: '/web-history',
+          icon: 'article',
+        },
+      ],
     },
   ],
 };

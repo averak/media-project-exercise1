@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { ErrorModule } from './component/error/error.module';
 import { DashboardModule } from './component/dashboard/dashboard.module';
+import { WebHistoryModule } from './component/web-history/web-history.module';
 
 // components
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { AppComponent } from './app.component';
   imports: [
     ErrorModule,
     DashboardModule,
+    WebHistoryModule,
+
     SharedModule,
     AppRoutingModule,
     BrowserModule,

@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+// modules
+import { SharedModule } from 'src/app/shared/shared.module';
+
 import { WebHistoryComponent } from './web-history.component';
 
 @NgModule({
   declarations: [WebHistoryComponent],
-  imports: [CommonModule],
+  imports: [SharedModule],
 })
 export class WebHistoryModule {}
