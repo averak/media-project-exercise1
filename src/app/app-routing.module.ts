@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainContainerComponent } from './shared/component/main-container/main-container.component';
 
 // modules
+import { ErrorRoutingModule } from './component/error/error-routing.module';
 import { DashboardRoutingModule } from './component/dashboard/dashboard-routing.module';
 
 const routes: Routes = [
@@ -19,6 +20,11 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'error',
+    loadChildren: () => ErrorRoutingModule,
+  },
+  { path: '**', redirectTo: '/error?status_code=404', pathMatch: 'full' },
 ];
 
 @NgModule({
