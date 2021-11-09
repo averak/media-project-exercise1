@@ -1,1 +1,54 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* background colors */
+.project-bg-white1 {
+  background-color: #ffffff;
+}
+
+.project-bg-white2 {
+  background-color: #eef1f4;
+}
+
+.project-bg-blue1 {
+  background-color: #4873c4;
+}
+
+.project-bg-blue2 {
+  background-color: #33558e;
+}
+
+.project-bg-blue3 {
+  background-color: #597cbf;
+}
+
+.project-bg-blue4 {
+  background-color: #3a7aca;
+}
+
+/* foreground colors */
+.project-fg-white1 {
+  color: #ffffff;
+}
+
+.project-fg-black1 {
+  color: #364862;
+}
+
+.project-fg-blue1 {
+  color: #4873c4;
+}
+
+/* other settings */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.scroll-content {
+  max-height: calc(100vh - 60px);
+  overflow: auto;
+}
