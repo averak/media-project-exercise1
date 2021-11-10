@@ -7,7 +7,10 @@ import { MainContainerComponent } from './shared/component/main-container/main-c
 // modules
 import { ErrorRoutingModule } from './component/error/error-routing.module';
 import { DashboardRoutingModule } from './component/dashboard/dashboard-routing.module';
+import { WebIntroRoutingModule } from './component/web-intro/web-intro-routing.module';
 import { WebHistoryRoutingModule } from './component/web-history/web-history-routing.module';
+import { ModernWebRoutingModule } from './component/modern-web/modern-web-routing.module';
+import { AboutRoutingModule } from './component/about/about-routing.module';
 
 const routes: Routes = [
   {
@@ -20,8 +23,20 @@ const routes: Routes = [
         loadChildren: () => DashboardRoutingModule,
       },
       {
+        path: 'web-intro',
+        loadChildren: () => WebIntroRoutingModule,
+      },
+      {
         path: 'web-history',
         loadChildren: () => WebHistoryRoutingModule,
+      },
+      {
+        path: 'modern-web',
+        loadChildren: () => ModernWebRoutingModule,
+      },
+      {
+        path: 'about',
+        loadChildren: () => AboutRoutingModule,
       },
     ],
   },
