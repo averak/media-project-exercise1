@@ -28,6 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { MarkdownModule } from 'ngx-markdown';
 
 // components
 import { HeaderComponent } from './component/header/header.component';
@@ -35,6 +36,7 @@ import { MainContainerComponent } from './component/main-container/main-containe
 import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { TitleComponent } from './component/title/title.component';
 import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
+import { DocumentComponent } from './component/document/document.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component
     SidenavComponent,
     TitleComponent,
     BreadcrumbComponent,
+    DocumentComponent,
   ],
   imports: [
     CommonModule,
@@ -78,9 +81,13 @@ import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component
     MatDialogModule,
     ScrollingModule,
     FlexLayoutModule,
-    NgbModalModule,
+    MarkdownModule.forRoot(),
   ],
   exports: [
+    // components
+    DocumentComponent,
+
+    // modules
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -114,6 +121,7 @@ import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component
     ScrollingModule,
     FlexLayoutModule,
     NgbModalModule,
+    MarkdownModule,
   ],
 })
 export class SharedModule {}
