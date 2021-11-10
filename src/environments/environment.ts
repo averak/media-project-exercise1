@@ -10,8 +10,8 @@ export const environment = {
       version: 'v1.0',
       display: false,
       externalLink: {
-        reference: '',
-        faq: '',
+        reference: 'https://github.com/averak/media-project-exercise1',
+        faq: 'https://github.com/averak/media-project-exercise1',
       },
       navs: [],
     },
@@ -23,8 +23,8 @@ export const environment = {
       version: 'v1.0',
       display: true,
       externalLink: {
-        reference: '',
-        faq: '',
+        reference: 'https://github.com/averak/media-project-exercise1',
+        faq: 'https://github.com/averak/media-project-exercise1',
       },
       navs: [
         {
@@ -41,8 +41,8 @@ export const environment = {
       version: 'v1.0',
       display: true,
       externalLink: {
-        reference: '',
-        faq: '',
+        reference: 'https://github.com/averak/media-project-exercise1',
+        faq: 'https://github.com/averak/media-project-exercise1',
       },
       navs: [
         {
@@ -60,8 +60,8 @@ export const environment = {
       version: 'v1.0',
       display: true,
       externalLink: {
-        reference: '',
-        faq: '',
+        reference: 'https://github.com/averak/media-project-exercise1',
+        faq: 'https://github.com/averak/media-project-exercise1',
       },
       navs: [
         {
@@ -78,8 +78,8 @@ export const environment = {
       version: 'v1.0',
       display: true,
       externalLink: {
-        reference: '',
-        faq: '',
+        reference: 'https://github.com/averak/media-project-exercise1',
+        faq: 'https://github.com/averak/media-project-exercise1',
       },
       navs: [
         {
