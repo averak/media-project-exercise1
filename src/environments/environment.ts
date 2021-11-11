@@ -72,8 +72,8 @@ export const environment = {
       ],
     },
     {
-      title: '本ページを支える技術',
-      description: 'Developer Portalを支える技術を紹介します。',
+      title: '本ページについて',
+      description: 'Developer Portalの役割と、本ページを支える技術を紹介します。',
       url: '/about',
       version: 'v1.0',
       display: true,
@@ -83,8 +83,13 @@ export const environment = {
       },
       navs: [
         {
-          label: '技術構成',
+          label: '本ページについて',
           url: '/about',
+          icon: 'article',
+        },
+        {
+          label: '技術構成',
+          url: '/about/tech',
           icon: 'article',
         },
       ],

@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: '',
     component: AboutComponent,
-    data: { breadcrumb: '技術構成', title: '技術構成' },
+    data: { breadcrumb: '本ページについて', title: '本ページについて' },
   },
 ];
 
