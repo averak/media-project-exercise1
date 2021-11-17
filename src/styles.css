@@ -207,3 +207,7 @@ blockquote {
   margin: 20px 0;
   padding: 1px 20px;
 }
+
+img {
+  max-width: 100%;
+}
