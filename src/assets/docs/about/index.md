@@ -1,1 +1,1 @@
-Developer Portal を支える技術について紹介するよ。
+Developer Portal について紹介するよ。
