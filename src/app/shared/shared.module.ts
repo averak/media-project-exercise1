@@ -28,7 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
-import { MarkdownModule } from 'ngx-markdown';
+import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 
 // components
 import { HeaderComponent } from './component/header/header.component';
@@ -37,6 +37,24 @@ import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { TitleComponent } from './component/title/title.component';
 import { BreadcrumbComponent } from './component/breadcrumb/breadcrumb.component';
 import { DocumentComponent } from './component/document/document.component';
+
+// markdown
+export function markedOptionsFactory(): MarkedOptions {
+  const renderer = new MarkedRenderer();
+
+  renderer.blockquote = (text: string) => {
+    return '<blockquote class="blockquote"><p>' + text + '</p></blockquote>';
+  };
+
+  return {
+    renderer: renderer,
+    gfm: true,
+    breaks: false,
+    pedantic: false,
+    smartLists: true,
+    smartypants: false,
+  };
+}
 
 @NgModule({
   declarations: [
@@ -81,7 +99,12 @@ import { DocumentComponent } from './component/document/document.component';
     MatDialogModule,
     ScrollingModule,
     FlexLayoutModule,
-    MarkdownModule.forRoot(),
+    MarkdownModule.forRoot({
+      markedOptions: {
+        provide: MarkedOptions,
+        useFactory: markedOptionsFactory,
+      },
+    }),
   ],
   exports: [
     // components

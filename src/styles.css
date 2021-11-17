@@ -198,3 +198,12 @@ table {
   padding: 2px 0px 2px 0px;
   border-bottom-style: none;
 }
+
+blockquote {
+  background: #dff1fe;
+  border-left: 4px solid #3a7aca;
+  border-radius: 4px;
+  color: #666666;
+  margin: 20px 0;
+  padding: 1px 20px;
+}
