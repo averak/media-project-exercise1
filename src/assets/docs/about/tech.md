@@ -24,6 +24,12 @@ Developer Portal は開発者の個人 VPS 上にデプロイしています。
 
 Nginx で Web サーバを起動し、SSG された Angular プロジェクトの静的ファイルをホスティングします。
 
+<br/>
+
+![](assets/images/architecture.png)
+
+<br/>
+
 ## 環境構築
 
 Developer Portal はソースコードを公開しているので、ローカル環境で実行することが可能です。
