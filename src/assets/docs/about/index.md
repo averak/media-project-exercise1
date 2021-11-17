@@ -33,7 +33,7 @@ $ git pull upstream master
 ```bash
 # 作業ブランチを作成
 # 例) feature/21_modify_uri_structure
-$ git switch feature/{issue番号}_{作業内容}
+$ git switch -c feature/{issue番号}_{作業内容}
 
 # 作業...
 
