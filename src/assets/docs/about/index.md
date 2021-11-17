@@ -20,7 +20,7 @@ Web の基本から歴史、モダンな技術まで幅広く解説していま�
 
 ```bash
 # リポジトリをclone
-$ git clone https://github.com/{アカウント名}/media-project-exercise1
+$ git clone git@github.com:{アカウント名}/media-project-exercise1
 $ cd media-project-exercise1
 
 # 最新のmasterを取り込む
@@ -43,7 +43,7 @@ $ git push origin feature/{issue番号}_{作業内容}
 
 ## 機能要求
 
-本ページは Web の基本と歴史、モダンな技術のみを扱っています。
+本ページは Web の基本と歴史、モダンな技術紹介のみを扱っています。
 
 他にも追加して欲しい機能があれば、[issues](https://github.com/averak/media-project-exercise1/issues)から報告してください！
 
