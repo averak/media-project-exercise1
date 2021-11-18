@@ -3,12 +3,8 @@ import { NgModule } from '@angular/core';
 // modules
 import { SharedModule } from 'src/app/shared/shared.module';
 
-// components
-import { AboutComponent } from './about.component';
-import { TechComponent } from './tech/tech.component';
-
 @NgModule({
-  declarations: [AboutComponent, TechComponent],
+  declarations: [],
   imports: [SharedModule],
 })
 export class AboutModule {}

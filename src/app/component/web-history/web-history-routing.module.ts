@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // components
-import { WebHistoryComponent } from './web-history.component';
+import { DocumentComponent } from 'src/app/shared/component/document/document.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: WebHistoryComponent,
-    data: { breadcrumb: 'Webの歴史', title: 'Webの歴史' },
+    component: DocumentComponent,
+    data: {
+      breadcrumb: 'Webの歴史',
+      title: 'Webの歴史',
+      markdown: 'assets/docs/web-history/index.md',
+    },
   },
 ];
 

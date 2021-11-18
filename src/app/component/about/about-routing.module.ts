@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // components
-import { AboutComponent } from './about.component';
-import { TechComponent } from './tech/tech.component';
+import { DocumentComponent } from 'src/app/shared/component/document/document.component';
 
 const routes: Routes = [
   {
@@ -12,13 +11,17 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: AboutComponent,
-        data: { breadcrumb: null, title: '本ページについて' },
+        component: DocumentComponent,
+        data: {
+          breadcrumb: null,
+          title: '本ページについて',
+          markdown: 'assets/docs/about/index.md',
+        },
       },
       {
         path: 'tech',
-        component: TechComponent,
-        data: { breadcrumb: '技術構成', title: '技術構成' },
+        component: DocumentComponent,
+        data: { breadcrumb: '技術構成', title: '技術構成', markdown: 'assets/docs/about/tech.md' },
       },
     ],
   },

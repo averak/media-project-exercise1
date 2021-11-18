@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // components
-import { WebIntroComponent } from './web-intro.component';
+import { DocumentComponent } from 'src/app/shared/component/document/document.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: WebIntroComponent,
-    data: { breadcrumb: 'Webの基本', title: 'Webの基本' },
+    component: DocumentComponent,
+    data: {
+      breadcrumb: 'Webの基本',
+      title: 'Webの基本',
+      markdown: 'assets/docs/web-intro/index.md',
+    },
   },
 ];
 

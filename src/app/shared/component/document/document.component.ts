@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MarkdownService } from 'src/app/shared/service/markdown.service';
 
 @Component({
   selector: 'app-document',
@@ -6,9 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./document.component.css'],
 })
 export class DocumentComponent implements OnInit {
-  @Input() src!: string;
+  markdown!: string;
 
-  constructor() {}
+  constructor(private markdownService: MarkdownService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.markdownService.getMarkdown().subscribe((markdown) => {
+      if (markdown) {
+        this.markdown = markdown;
+      }
+    });
+  }
 }
