@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     component: DocumentComponent,
     data: {
-      breadcrumb: 'Webの歴史',
+      breadcrumb: null,
       title: 'Webの歴史',
       markdown: 'assets/docs/web-history/index.md',
     },

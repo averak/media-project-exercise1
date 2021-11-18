@@ -7,23 +7,17 @@ import { DocumentComponent } from 'src/app/shared/component/document/document.co
 const routes: Routes = [
   {
     path: '',
-    data: { breadcrumb: '本ページについて' },
-    children: [
-      {
-        path: '',
-        component: DocumentComponent,
-        data: {
-          breadcrumb: null,
-          title: '本ページについて',
-          markdown: 'assets/docs/about/index.md',
-        },
-      },
-      {
-        path: 'tech',
-        component: DocumentComponent,
-        data: { breadcrumb: '技術構成', title: '技術構成', markdown: 'assets/docs/about/tech.md' },
-      },
-    ],
+    component: DocumentComponent,
+    data: {
+      breadcrumb: null,
+      title: '本ページについて',
+      markdown: 'assets/docs/about/index.md',
+    },
+  },
+  {
+    path: 'tech',
+    component: DocumentComponent,
+    data: { breadcrumb: '技術構成', title: '技術構成', markdown: 'assets/docs/about/tech.md' },
   },
 ];
 

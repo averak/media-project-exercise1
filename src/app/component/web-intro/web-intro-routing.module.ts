@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     component: DocumentComponent,
     data: {
-      breadcrumb: 'Webの基本',
+      breadcrumb: null,
       title: 'Webの基本',
       markdown: 'assets/docs/web-intro/index.md',
     },

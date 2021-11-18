@@ -24,18 +24,22 @@ const routes: Routes = [
       },
       {
         path: 'web-intro',
+        data: { breadcrumb: 'Webの基本' },
         loadChildren: () => WebIntroRoutingModule,
       },
       {
         path: 'web-history',
+        data: { breadcrumb: 'Webの歴史' },
         loadChildren: () => WebHistoryRoutingModule,
       },
       {
         path: 'modern-web',
+        data: { breadcrumb: 'モダンなWeb技術' },
         loadChildren: () => ModernWebRoutingModule,
       },
       {
         path: 'about',
+        data: { breadcrumb: '本ページについて' },
         loadChildren: () => AboutRoutingModule,
       },
     ],
