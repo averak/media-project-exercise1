@@ -208,6 +208,10 @@ blockquote {
   padding: 1px 20px;
 }
 
+code {
+  background-color: #eff1f3;
+}
+
 img {
   max-width: 100%;
 }
