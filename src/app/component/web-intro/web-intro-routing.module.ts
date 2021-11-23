@@ -14,6 +14,33 @@ const routes: Routes = [
       markdown: 'assets/docs/web-intro/index.md',
     },
   },
+  {
+    path: 'http',
+    component: DocumentComponent,
+    data: {
+      breadcrumb: 'HTTPとは',
+      title: 'HTTPとは',
+      markdown: 'assets/docs/web-intro/http.md',
+    },
+  },
+  {
+    path: 'uri',
+    component: DocumentComponent,
+    data: {
+      breadcrumb: 'URIとは',
+      title: 'URIとは',
+      markdown: 'assets/docs/web-intro/uri.md',
+    },
+  },
+  {
+    path: 'html',
+    component: DocumentComponent,
+    data: {
+      breadcrumb: 'HTMLとは',
+      title: 'HTMLとは',
+      markdown: 'assets/docs/web-intro/html.md',
+    },
+  },
 ];
 
 @NgModule({

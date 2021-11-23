@@ -50,6 +50,21 @@ export const environment = {
           url: '/web-intro',
           icon: 'article',
         },
+        {
+          label: 'HTTPとは',
+          url: '/web-intro/http',
+          icon: 'article',
+        },
+        {
+          label: 'URIとは',
+          url: '/web-intro/uri',
+          icon: 'article',
+        },
+        {
+          label: 'HTMLとは',
+          url: '/web-intro/html',
+          icon: 'article',
+        },
       ],
     },
     {
