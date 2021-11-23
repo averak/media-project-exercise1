@@ -1,8 +1,10 @@
 <div class="header-content" fxLayout="row" fxLayoutAlign="space-between center">
-  <div class="header-title" fxLayout="row" fxLayoutAlign="start center" fxFlexOffset="20px">
-    <mat-icon>token</mat-icon>
-    <span fxFlexOffset="5px">Developer Portal</span>
-  </div>
+  <a class="header-title project-fg-white1" [routerLink]="'/'">
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlexOffset="20px">
+      <mat-icon>token</mat-icon>
+      <span fxFlexOffset="5px">Developer Portal</span>
+    </div>
+  </a>
 
   <div class="user-menu-container" fxLayout="column" fxLayoutAlign="center">
     <mat-icon>account_circle</mat-icon>
