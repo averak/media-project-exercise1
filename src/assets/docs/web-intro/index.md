@@ -15,6 +15,6 @@ Web を支える基本的な技術は下記の 3 つです。
 - HTML (Hypertext Markup Language)
 
 URI を使えば立命館大学の公式 Web サイトやショッピングサイトなど、ありとあらゆる情報リソースを指し示せます。HTML はそれらの情報を表すフォーマットで、HTTP というプロトコルを使って取得することができます。
-本 Web サイトにアクセスする際も、Web ブラウザは`https://media-project-exercise1.abelab.dev`という URI に HTTP の GET メソッドを用いて HTML を取得しています。
+本 Web サイトにアクセスする際も、Web ブラウザは`https://developer-portal.abelab.dev`という URI に HTTP の GET メソッドを用いて HTML を取得しています。
 
 ![](https://scrapbox.io/files/60dc3ce6ed4ff900227876b5.png)
