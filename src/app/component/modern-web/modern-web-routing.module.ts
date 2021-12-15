@@ -10,7 +10,7 @@ const routes: Routes = [
     component: DocumentComponent,
     data: {
       breadcrumb: null,
-      title: '最新技術',
+      title: 'モダンなWeb技術',
       markdown: 'assets/docs/modern-web/index.md',
     },
   },
