@@ -7,6 +7,7 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 メディアプロジェクト演習 1 のグループ制作課題です。
+
 ## Develop
 
 ### Requirements
