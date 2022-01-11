@@ -2,7 +2,7 @@
 
 URI とは Uniform Resource Identifier の略で、Web 上に存在するリソースを指す識別子になります。
 
-例えば、本 Web サイトのリソース識別子は[https://media-project-exercise1.abelab.dev](https://media-project-exercise1.abelab.dev)であり、一意性が約束されているため別のページが表示されることなく目的のページに辿り着けるわけです。
+例えば、本 Web サイトのリソース識別子は`https://media-project-exercise1.abelab.dev`であり、一意性が約束されているため別のページが表示されることなく目的のページに辿り着けるわけです。
 
 ## URI の仕組み
 
