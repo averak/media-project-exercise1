@@ -84,6 +84,11 @@ export const environment = {
           url: '/modern-web',
           icon: 'article',
         },
+        {
+          label: 'UIライブラリ',
+          url: '/modern-web/ui-library',
+          icon: 'article',
+        },
       ],
     },
     {

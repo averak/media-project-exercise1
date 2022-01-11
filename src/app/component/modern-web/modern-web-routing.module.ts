@@ -14,6 +14,15 @@ const routes: Routes = [
       markdown: 'assets/docs/modern-web/index.md',
     },
   },
+  {
+    path: 'ui-library',
+    component: DocumentComponent,
+    data: {
+      breadcrumb: 'UIライブラリ',
+      title: 'UIライブラリ',
+      markdown: 'assets/docs/modern-web/ui-library.md',
+    },
+  },
 ];
 
 @NgModule({
